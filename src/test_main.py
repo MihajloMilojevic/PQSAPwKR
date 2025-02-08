@@ -3,6 +3,15 @@ import key_recovery.single_key as kr
 from key_recovery.utils import pqhash
 import random
 
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel, QLineEdit
+from PyQt5.QtCore import Qt
+from demos.single_key_recovery import KeyRecoveryApp
+
+app = QApplication(sys.argv)
+ex = KeyRecoveryApp()
+sys.exit(app.exec_())
+
 threadhold = 2
 prime = 4567
 secret = 1234

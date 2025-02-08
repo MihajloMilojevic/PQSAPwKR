@@ -1,0 +1,3 @@
+from src.demos import singleKeyRecoveryDemoRunner
+
+singleKeyRecoveryDemoRunner()
