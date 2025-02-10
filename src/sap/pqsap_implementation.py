@@ -1,7 +1,7 @@
 import pandas as pd
-from Crypto.Hash import SHA3_256
+from crypto.Hash import SHA3_256
+from crypto.Random import get_random_bytes
 import kyber
-from Crypto.Random import get_random_bytes
 import os
 
 def generate_stealth_address(rk, key, pk):
